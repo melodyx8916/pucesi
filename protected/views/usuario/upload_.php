@@ -1,14 +1,9 @@
-<?php
-/* @var $this UsuarioController */
+<?php $this->pageTitle = 'Subir Imagenes';
+$this->breadcrumbs = array('Subir Imagenes');
 
-$this->pageTitle = 'Subir Imagenes';
-$this->breadcrumbs = array(
-    'Usuario' => array('/usuario'),
-    'Subir Imagenes',
-);
+//echo $mensaje;
 ?>
 
-<?php echo $mensaje ?>
 <div class="form">
     <?php
 //[]   ESTO TAMBIEN REPRESENTA LOS QUE ES UN ARRAY()  /  []
@@ -24,6 +19,15 @@ $this->breadcrumbs = array(
             )
     );
     ?>
+
+    <div class="row">
+        <?php
+        echo $form->label($model, 'title');
+        echo $form->textField($model, 'title');
+        echo $form->error($model, 'title', array('class' => 'text-error'));
+        ?>
+    </div>
+
     <div class="row">
         <?php
         $this->widget('CMultiFileUpload', array(
@@ -39,15 +43,31 @@ $this->breadcrumbs = array(
         ?>
     </div>
     <div class="row">
-        <?php
-        //neceista echo para imprimir mi boton o cualquier cosa de todo el form
+        <?php//neceista echo para imprimir mi boton o cualquier cosa de todo el form
         echo CHtml::submitButton('Subir Imagen', array('class' => 'btn btn-primary'));
         ?>
     </div>
 
-
-
+    <?php $this->endWidget(); ?>
 </div>
-<br />
-<?php // echo CHtml::submitButton('Save Changes'); ?>
+<?php $form = $this->beginWidget('CActiveForm', array(
+    'id'=>'user-form',
+    'enableAjaxValidation'=>true,
+    'enableClientValidation'=>true,
+    'focus'=>array($model,'firstName'),
+)); ?>
+
+<?php echo $form->errorSummary($model); ?>
+
+<div class="row">
+    <?php echo $form->labelEx($model,'firstName'); ?>
+    <?php echo $form->textField($model,'firstName'); ?>
+    <?php echo $form->error($model,'firstName'); ?>
+</div>
+<div class="row">
+    <?php echo $form->labelEx($model,'lastName'); ?>
+    <?php echo $form->textField($model,'lastName'); ?>
+    <?php echo $form->error($model,'lastName'); ?>
+</div>
+
 <?php $this->endWidget(); ?>

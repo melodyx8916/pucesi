@@ -14,8 +14,8 @@ class UsuarioController extends Controller {
         return array(
             array(
                 'deny',
-                'actions' => array('upload','configuracion'), //mi vista
-               // 'actions' => array('c_datospersonales'),
+                'actions' => array('upload', 'configuracion'), //mi vista
+                // 'actions' => array('c_datospersonales'),
                 'users' => array('?'),
             )
         );
@@ -67,14 +67,17 @@ class UsuarioController extends Controller {
         $this->render('configuracion', array('model' => $model, 'mensaje' => $msm));
     }
 
-    
     //mi controlador de mi vista upload
-    public function actionUpload() {
+    public function actionUploads() {
         $model = new FormUpload;
         $msm = null;
+//        var_dump($model->attributes);
+//            die();
         if (isset($_POST['FormUpload'])) {
             $model->attributes = $_POST['FormUpload'];
-            $images = CUploadedFile::getInstanceByName('images');
+//             var_dump($model);
+//            die();
+            $images = CUploadedFile::getInstancesByName('images');
 
             //comprobar si existen imagenes
             if (count($images) === 0) {
@@ -126,14 +129,35 @@ class UsuarioController extends Controller {
                     $consulta = "INSERT INTO tbl_imagen ";
                     $consulta.="(id_user, title, folder, image)";
                     $consulta.="VALUES";
-                    $consulta.="('".$id_user."', '".$model->title."','".$folder."','".$img."')";
-                    
-                    $resultado=$conexion->createCommand($consulta)->execute();
-                    $i->saveAs($path.$img);
+                    $consulta.="('" . $id_user . "', '" . $model->title . "','" . $folder . "','" . $img . "')";
+
+                    $resultado = $conexion->createCommand($consulta)->execute();
+                    $i->saveAs($path . $img);
                 }
             }
         }
-       // $this->render('upload');
+        // $this->render('upload');  
+        $this->render('upload', array('model' => $model, 'mensaje' => $msm));
+    }
+
+    public function actionUpload() {
+        $model = new Upload;
+
+        $msm = null;
+
+        if (isset($_POST['Upload'])) {
+//            var_dump($msm);
+//            die();
+            $model->attributes = $_POST['Upload'];
+
+            if (!$model->validate()) {
+                $msm = 'BIEN';
+                var_dump($msm);
+                die();
+            } else {
+                $msm = 'NO EXISTEN DATOS';
+            }
+        }
         $this->render('upload', array('model' => $model, 'mensaje' => $msm));
     }
 
