@@ -1,0 +1,7 @@
+CREATE TABLE tbl_imagen (
+    id_image INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    id_user INT (11) NOT NULL,
+    title VARCHAR(120) NOT NULL,
+    folder VARCHAR(120) NOT NULL,
+    imagen VARCHAR(120) NOT NULL
+);

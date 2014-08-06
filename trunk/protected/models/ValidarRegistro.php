@@ -46,13 +46,22 @@ class ValidarRegistro extends CFormModel {
         ); //fin de mi return array
     }
 
+    public function attributeLabels() {
+        return array(
+            'nombre' => 'Ingrese Nombre/Usuario',
+            'email' => 'Ingrese Correo Electronico',
+            'password' => 'Ingrese Contraseña',
+            'repetir_password' => 'Repetir Contraseña'
+        );
+    }
+
 //fin de mi metodo de rules
     //metodo para hacer una consulta y comprobar si el nombre existe en la base de datos
     public function comprobar_nombre($attributes, $params) {
         //acceder a mi base de datos
         $conexion = Yii::app()->db;
         //SELECT username FROM tbl_user WHERE username = 'test1'
-        $consulta = "SELECT username FROM tbl_user WHERE username = '".$this->nombre."'";
+        $consulta = "SELECT username FROM tbl_user WHERE username = '" . $this->nombre . "'";
 
         $resultado = $conexion->createCommand($consulta);  //creo el command para la consulta
         $registros = $resultado->query(); //ejecuto la consulta
@@ -70,7 +79,7 @@ class ValidarRegistro extends CFormModel {
         //acceder a mi base de datos
         $conexion = Yii::app()->db;
         //SELECT username FROM tbl_user WHERE username = 'test1'
-        $consulta = "SELECT email FROM tbl_user WHERE email = '".$this->email."'";
+        $consulta = "SELECT email FROM tbl_user WHERE email = '" . $this->email . "'";
 
         $resultado = $conexion->createCommand($consulta);  //creo el command para la consulta
         $registros = $resultado->query(); //ejecuto la consulta
