@@ -2,14 +2,14 @@
 
 //mi phpmailer para el envio de mensajes al correo
 
-Yii::import('application.extensions.phpmailer.JPhpMailer');
+Yii::import('ext.phpmailer.*');
 
 class EnviarEmail {
 
     public function Enviar_Email(array $from, array $to, $subject, $message) {
         $mail = new JPhpMailer;//requerido
         $mail->IsSMTP();//requerido
-        $mail->Host = 'smtp.gmail.com';//requerido  /ejemplo/smpt.163.com
+        $mail->Host = 'localhost';//requerido  /ejemplo/smpt.163.com
       //  $mail->SMTPAuth = true;
       //  $mail->Username = 'yourname@163.com';
       //  $mail->Password = 'yourpassword';

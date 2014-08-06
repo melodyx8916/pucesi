@@ -96,16 +96,16 @@ class SiteController extends Controller {
         $this->redirect(Yii::app()->homeUrl);
     }
 
-    //MI ACCION DE MI PANEL
-    public function actionPanel() {
-        //si el usuario ha sido logueado lo llevara a mi panel de caso contrario se redirecciona a la vista home
-        if (Yii::app()->user->isGuest) {  //  si el usuario es invitado
-            $this->redirect(Yii::app()->homeUrl);
-        } else {
-            //permanece en el panel si esta logueado
-            $this->render('panel');
-        }
-    }
+//    //MI ACCION DE MI PANEL
+//    public function actionPanel() {
+//        //si el usuario ha sido logueado lo llevara a mi panel de caso contrario se redirecciona a la vista home
+//        if (Yii::app()->user->isGuest) {  //  si el usuario es invitado
+//            $this->redirect(Yii::app()->homeUrl);
+//        } else {
+//            //permanece en el panel si esta logueado
+//            $this->render('panel');
+//        }
+//    }
 
     public function actionRegistro() {
 
@@ -154,6 +154,10 @@ class SiteController extends Controller {
             }
         }
         $this->render('registro', array('model' => $model, 'mensaje_envio' => $msm)); //enviar los datos a la vista con el $model
+    }
+    
+    public function actionRecuperar_pass(){
+        $this->render('recuperar_pass');
     }
 
 }

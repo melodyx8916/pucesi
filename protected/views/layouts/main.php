@@ -34,14 +34,19 @@
                     </a>
                     <div class="nav-collapse collapse">
                         <?php
-                        $this->widget('zii.widgets.CMenu', array(
+                        $this->widget('bootstrap.widgets.TbMenu', array(
                             'items' => array(
                                 array('label' => 'Home', 'url' => array('/site/index'), 'visible' => !Yii::app()->user->isGuest),
                                 array('label' => 'About', 'url' => array('/site/page', 'view' => 'about'), 'visible' => !Yii::app()->user->isGuest),
                                 array('label' => 'Contact', 'url' => array('/site/contact'), 'visible' => !Yii::app()->user->isGuest),
                                 array('label' => 'Registrarme', 'url' => array('/site/registro'), 'visible' => Yii::app()->user->isGuest),
                                 array('label' => 'Iniciar Sesion', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
-                                array('label' => 'Panel de Control', 'url' => array('/site/panel'), 'visible' => !Yii::app()->user->isGuest),
+                                array('label' => 'Panel de Control', 'visible' => !Yii::app()->user->isGuest,
+                                    'items' => array(
+                                        array('label' => 'Configuracion', 'url' => array('/usuario/configuracion')),
+                                        array('label'=>'Subir Imagenes', 'url'=>array('/usuario/upload'))
+                                    ),
+                                ),
                                 array('label' => 'Cerrar Sesion (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)
                             ),
                             'htmlOptions' => array('class' => 'nav navbar-nav'),

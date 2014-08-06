@@ -25,19 +25,19 @@ class LoginForm extends CFormModel {
                 'message' => 'Campos Requerido',
             ),
 //                    //para que mi user solo permita letras
-            array(
-                'username',
-                'match',
-                'pattern' => '/^[a-z0-9áeíóúàèìòùñ\_]+$/i',
-                'message' => 'Solo letras numeros y guione bajos',
-            ),
-            //para que mi user solo permita letras
-            array(
-                'password',
-                'match',
-                'pattern' => '/^[a-z0-9]+$/i',
-                'message' => 'Solo Letras y numeros',
-            ),
+//            array(
+//                'username',
+//                'match',
+//                'pattern' => '/^[a-z0-9áeíóúàèìòùñ\_]+$/i',
+//                'message' => 'Solo letras numeros y guione bajos',
+//            ),
+//            //para que mi user solo permita letras
+//            array(
+//                'password',
+//                'match',
+//                'pattern' => '/^[a-z0-9]+$/i',
+//                'message' => 'Solo Letras y numeros',
+//            ),
             // rememberMe needs to be a boolean
             array('rememberMe', 'boolean'),
             // password needs to be authenticated
