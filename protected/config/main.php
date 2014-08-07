@@ -7,7 +7,7 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__) . '/../extensions/bootstrap')
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'Aplicacion PUCE-SI',
+    'name' => 'PUCE-SI',
     'theme' => 'bootstrap',
     // preloading 'log' component
     'preload' => array('log'),
@@ -61,6 +61,8 @@ return array(
 //            'rules' => array(
 //                '<controller:\w+>/<id:\d+>' => '<controller>/view',
 //                '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
+//                '<controller:\w+>/<action:\w+>$<id:\d+>$<id2:\d+>' => '<controller>/<action>',
+//                '<controller:\w+>/<action:\w+>$<id:\d+>$<id2:\d+>$<id3:\d+>' => '<controller>/<action>',
 //                '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
 //            ),
 //        ),

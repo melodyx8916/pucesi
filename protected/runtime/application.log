@@ -6062,3 +6062,323 @@ Stack trace:
 REQUEST_URI=/proyecto_boot/index.php?r=usuario/configuracion
 HTTP_REFERER=http://localhost/proyecto_boot/index.php?r=usuario/cambiarPass
 ---
+2014/08/07 21:09:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:11:43 [error] [exception.CException] exception 'CException' with message 'The URL pattern "<controller:\w+>/<action:\w+>/<id:\d+>/<id:\d+>" for route "<controller>/<action>" is not a valid regular expression.' in C:\yii\framework\web\CUrlManager.php:701
+Stack trace:
+#0 C:\yii\framework\web\CUrlManager.php(270): CUrlRule->__construct('<controller>/<a...', '<controller:\w+...')
+#1 C:\yii\framework\web\CUrlManager.php(226): CUrlManager->createUrlRule('<controller>/<a...', '<controller:\w+...')
+#2 C:\yii\framework\web\CUrlManager.php(206): CUrlManager->processRules()
+#3 C:\yii\framework\base\CModule.php(387): CUrlManager->init()
+#4 C:\yii\framework\base\CApplication.php(522): CModule->getComponent('urlManager')
+#5 C:\yii\framework\web\CWebApplication.php(140): CApplication->getUrlManager()
+#6 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:20:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:21:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:22:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:23:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian&codigo_verificacion=7e002b36ac9d58ae457fed5675c5265feaea0d7e
+---
+2014/08/07 21:43:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Perfil".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('Perfil')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('Perfil')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/Perfil')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/Perfil
+HTTP_REFERER=http://localhost/proyecto_boot/index.php
+---
+2014/08/07 21:45:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Perfil".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('Perfil')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('Perfil')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/Perfil')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/Perfil
+HTTP_REFERER=http://localhost/proyecto_boot/index.php
+---
+2014/08/07 21:45:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Perfil".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('Perfil')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('Perfil')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/Perfil')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/Perfil
+HTTP_REFERER=http://localhost/proyecto_boot/index.php
+---
+2014/08/07 22:13:26 [error] [php] Trying to get property of non-object (C:\wamp\www\proyecto_boot\protected\views\layouts\main.php:7)
+Stack trace:
+#0 C:\yii\framework\web\widgets\CContentDecorator.php(76): UsuarioController->renderFile()
+#1 C:\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#2 C:\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 C:\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#4 C:\yii\framework\web\CBaseController.php(300): UsuarioController->endWidget()
+#5 C:\wamp\www\proyecto_boot\protected\views\layouts\column1.php(6): UsuarioController->endContent()
+#6 C:\yii\framework\web\CBaseController.php(126): require()
+#7 C:\yii\framework\web\CBaseController.php(95): UsuarioController->renderInternal()
+#8 C:\yii\framework\web\CController.php(784): UsuarioController->renderFile()
+#9 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(25): UsuarioController->render()
+#10 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionPerfil()
+#11 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 C:\yii\framework\web\filters\CFilterChain.php(133): UsuarioController->runAction()
+#13 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 C:\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 C:\yii\framework\web\filters\CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#16 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 C:\yii\framework\web\CController.php(265): UsuarioController->runActionWithFilters()
+#19 C:\yii\framework\web\CWebApplication.php(282): UsuarioController->run()
+#20 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 C:\wamp\www\proyecto_boot\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/Perfil
+in C:\wamp\www\proyecto_boot\protected\views\layouts\main.php (7)
+in C:\wamp\www\proyecto_boot\protected\views\layouts\column1.php (6)
+in C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php (25)
+2014/08/07 22:20:00 [error] [php] include(Util.php): failed to open stream: No such file or directory (C:\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php(6): spl_autoload_call()
+#1 C:\yii\framework\web\CBaseController.php(126): require()
+#2 C:\yii\framework\web\CBaseController.php(95): UsuarioController->renderInternal()
+#3 C:\yii\framework\web\CController.php(869): UsuarioController->renderFile()
+#4 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(170): UsuarioController->renderPartial()
+#5 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionRegistroPerfilModal()
+#6 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\yii\framework\web\filters\CFilterChain.php(133): UsuarioController->runAction()
+#8 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\yii\framework\web\filters\CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#11 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\yii\framework\web\CController.php(265): UsuarioController->runActionWithFilters()
+#14 C:\yii\framework\web\CWebApplication.php(282): UsuarioController->run()
+#15 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\proyecto_boot\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyecto_boot//index.php?r=usuario/RegistroPerfilModal
+in C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php (6)
+in C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php (170)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 22:20:07 [error] [php] include(Util.php): failed to open stream: No such file or directory (C:\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php(6): spl_autoload_call()
+#1 C:\yii\framework\web\CBaseController.php(126): require()
+#2 C:\yii\framework\web\CBaseController.php(95): UsuarioController->renderInternal()
+#3 C:\yii\framework\web\CController.php(869): UsuarioController->renderFile()
+#4 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(170): UsuarioController->renderPartial()
+#5 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionRegistroPerfilModal()
+#6 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\yii\framework\web\filters\CFilterChain.php(133): UsuarioController->runAction()
+#8 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\yii\framework\web\filters\CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#11 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\yii\framework\web\CController.php(265): UsuarioController->runActionWithFilters()
+#14 C:\yii\framework\web\CWebApplication.php(282): UsuarioController->run()
+#15 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\proyecto_boot\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/RegistroPerfilModal
+in C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php (6)
+in C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php (170)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 22:20:46 [error] [php] include(Util.php): failed to open stream: No such file or directory (C:\yii\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php(6): spl_autoload_call()
+#1 C:\yii\framework\web\CBaseController.php(126): require()
+#2 C:\yii\framework\web\CBaseController.php(95): UsuarioController->renderInternal()
+#3 C:\yii\framework\web\CController.php(869): UsuarioController->renderFile()
+#4 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(170): UsuarioController->renderPartial()
+#5 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionRegistroPerfilModal()
+#6 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\yii\framework\web\filters\CFilterChain.php(133): UsuarioController->runAction()
+#8 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\yii\framework\web\filters\CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#11 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\yii\framework\web\CController.php(265): UsuarioController->runActionWithFilters()
+#14 C:\yii\framework\web\CWebApplication.php(282): UsuarioController->run()
+#15 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\proyecto_boot\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/RegistroPerfilModal
+in C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php (6)
+in C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php (170)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 22:21:49 [error] [php] Trying to get property of non-object (C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php:11)
+Stack trace:
+#0 C:\yii\framework\web\CController.php(869): UsuarioController->renderFile()
+#1 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(170): UsuarioController->renderPartial()
+#2 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionRegistroPerfilModal()
+#3 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 C:\yii\framework\web\filters\CFilterChain.php(133): UsuarioController->runAction()
+#5 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#7 C:\yii\framework\web\filters\CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#8 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\yii\framework\web\CController.php(265): UsuarioController->runActionWithFilters()
+#11 C:\yii\framework\web\CWebApplication.php(282): UsuarioController->run()
+#12 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\proyecto_boot\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/RegistroPerfilModal
+in C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php (11)
+in C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php (170)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 22:22:38 [error] [exception.CException] exception 'CException' with message 'UsuarioController has an extra endWidget() call in its view.' in C:\yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php(44): CBaseController->endWidget()
+#1 C:\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(170): CController->renderPartial('registroPerfilM...', Array, false, true)
+#5 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionRegistroPerfilModal()
+#6 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\yii\framework\web\CWebApplication.php(282): CController->run('RegistroPerfilM...')
+#15 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/Registr...')
+#16 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/RegistroPerfilModal
+HTTP_REFERER=http://localhost/proyecto_boot/index.php?r=usuario/Perfil
+---
+2014/08/07 22:32:10 [error] [exception.CException] exception 'CException' with message 'UsuarioController has an extra endWidget() call in its view.' in C:\yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php(36): CBaseController->endWidget()
+#1 C:\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(170): CController->renderPartial('registroPerfilM...', Array, false, true)
+#5 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionRegistroPerfilModal()
+#6 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\yii\framework\web\CWebApplication.php(282): CController->run('RegistroPerfilM...')
+#15 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/Registr...')
+#16 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/RegistroPerfilModal
+HTTP_REFERER=http://localhost/proyecto_boot/index.php?r=usuario/Perfil
+---
+2014/08/07 22:32:11 [error] [exception.CException] exception 'CException' with message 'UsuarioController has an extra endWidget() call in its view.' in C:\yii\framework\web\CBaseController.php:210
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\views\usuario\registroPerfilModal.php(36): CBaseController->endWidget()
+#1 C:\yii\framework\web\CBaseController.php(126): require('C:\wamp\www\pro...')
+#2 C:\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\wamp\www\pro...', Array, true)
+#3 C:\yii\framework\web\CController.php(869): CBaseController->renderFile('C:\wamp\www\pro...', Array, true)
+#4 C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php(170): CController->renderPartial('registroPerfilM...', Array, false, true)
+#5 C:\yii\framework\web\actions\CInlineAction.php(49): UsuarioController->actionRegistroPerfilModal()
+#6 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 C:\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\yii\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\yii\framework\web\CWebApplication.php(282): CController->run('RegistroPerfilM...')
+#15 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/Registr...')
+#16 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/RegistroPerfilModal
+HTTP_REFERER=http://localhost/proyecto_boot/index.php?r=usuario/Perfil
+---

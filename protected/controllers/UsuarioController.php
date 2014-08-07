@@ -20,9 +20,12 @@ class UsuarioController extends Controller {
             )
         );
     }
-    
-    public function actionIndex()
-    {
+
+    public function actionPerfil() {
+        $this->render('Perfil');
+    }
+
+    public function actionIndex() {
         $this->render('index');
     }
 
@@ -137,4 +140,38 @@ class UsuarioController extends Controller {
         }
         return $msm = "<strong class='text-info'>Se guardo correctamente las imagenes</strong>";
     }
+
+    public function actionRegistroPerfilModal() {
+        if (Yii::app()->request->isAjaxRequest) {
+
+//             $model->owner_id = Yii::app()->user->id;
+            $validadorPartial = false;
+//            $model->entidad_tipo = $tipo_entidad;
+//            $model->entidad_id = $id_entidad;
+//            $tipo_entidad == $model->getEntidadTipoContacto() ? $model->contacto_id = $id_entidad : $model->contacto_id;
+//            if (isset($_POST['Tarea'])) {
+//                if (isset($_POST['Tarea']['accion'])) {
+//
+//                    $model->attributes = $_POST['Tarea'];
+//
+////                    $model->contacto_id = $_POST['cliente_id'];
+////                    var_dump($model->attributes);
+//////                    die();
+//                    $result = $this->Crear($model);
+//                }
+//
+//                if (!$result['success']) {
+//                    $result['mensage'] = "Error al guardar la tarea";
+//                }
+//                $validadorPartial = TRUE;
+//                echo json_encode($result);
+//            }
+            if (!$validadorPartial) {
+                $this->renderPartial('registroPerfilModal', array('model' => 5), false, true);
+            }
+        } else {
+            var_dump("sss");    
+        }
+    }
+
 }

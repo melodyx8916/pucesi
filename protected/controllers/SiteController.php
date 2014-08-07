@@ -132,7 +132,8 @@ class SiteController extends Controller {
                 $message = "Para confirmar su cuenta, haga click en el";
                 $message.= "Siguiente enlace...";
                 $message.= "<a href='http://localhost/proyecto_boot/index.php?r=site/registro&username=" . $model->nombre . "&codigo_verificacion=" . $guardar->codigo_verificacion . "'>Confirmar Registro</a>";
-
+                //$message.= "<a href='http://localhost/proyecto_boot/site/registro&username=" . $model->nombre . "&codigo_verificacion=" . $guardar->codigo_verificacion . "'>Confirmar Registro</a>";
+                
                 $email = new EnviarEmail;
                 $msm = $email->Enviar_Email(
                         array(Yii::app()->params['adminEmail'], Yii::app()->name), array($model->email, $model->nombre), $subject, $message
@@ -171,6 +172,8 @@ class SiteController extends Controller {
                     $consulta.="username='" . $username . "' AND codigo_verificacion='" . $codigo_verificacion . "'";
                     $resultado = $conexion->createCommand($consulta)->execute();
                     $msm = 'Se ha registrado con existo, Ya puede Iniciar Sesion';
+                    $this->redirect('site/login');
+                    
                 }
             }
         }
