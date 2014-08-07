@@ -3,17 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/proyecto_boot/protected/views/usuario/cambiarPass.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/models/ContactForm.php</file>
             <file>file:/C:/wamp/www/proyecto_boot/protected/controllers/UsuarioController.php</file>
-            <file>file:/C:/wamp/www/proyecto_boot/protected/models/ConsultasDB.php</file>
-            <file>file:/C:/wamp/www/proyecto_boot/protected/views/layouts/main.php</file>
             <file>file:/C:/wamp/www/proyecto_boot/protected/views/usuario/subirImagen.php</file>
             <file>file:/C:/wamp/www/proyecto_boot/protected/models/ValidarRegistro.php</file>
-            <file>file:/C:/wamp/www/proyecto_boot/protected/models/SubirImagenes.php</file>
             <file>file:/C:/wamp/www/proyecto_boot/protected/controllers/SiteController.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/views/site/registro.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/models/EnviarEmail.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/views/usuario/index.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/views/usuario/cambiarPass.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/models/ConsultasDB.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/views/layouts/main.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/models/SubirImagenes.php</file>
+            <file>file:/C:/wamp/www/proyecto_boot/protected/config/main.php</file>
             <file>file:/C:/wamp/www/proyecto_boot/protected/models/CambiarPass.php</file>
             <file>file:/C:/wamp/www/proyecto_boot/protected/models/LoginForm.php</file>
-            <file>file:/C:/wamp/www/proyecto_boot/protected/views/usuario/index.php</file>
         </group>
     </open-files>
 </project-private>

@@ -15,7 +15,8 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
-        'application.extensions.*'
+        'application.extensions.*',
+        'ext.yii-mail.YiiMailMessage'
     ),
     'modules' => array(
         'gii' => array(
@@ -35,7 +36,16 @@ return array(
     ),
     // application components
     'components' => array(
-        
+        'Smtpmail'=>array(
+            'class'=>'application.extensions.smtpmail.PHPMailer',
+            'Host'=>"smtp.gmail.com",
+            'Username'=>'cristtian8916@gmail.com',
+            'Password'=>'djsistemas',
+            'Mailer'=>'smtp',
+            'Port'=>587,
+            'SMTPAuth'=>true,
+            'SMTPSecure' => 'tls',
+        ),
         'bootstrap' => array(
             'class' => 'bootstrap.components.Bootstrap',
         ),
