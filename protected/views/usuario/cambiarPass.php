@@ -1,10 +1,10 @@
 <?php
 /* @var $this UsuarioController */
 
-$this->pageTitle = 'Configuracion';
+$this->pageTitle = 'Cambiar Password';
 $this->breadcrumbs = array(
-    'Usuario' => array('/usuario'),
-    'Configuracion',
+    'Panel de Control' => array('/usuario'),
+    'Cambiar Password',
 );
 ?>
 
@@ -45,7 +45,7 @@ $this->breadcrumbs = array(
     <div class="row">
         <?php
         //neceista echo para imprimir mi boton o cualquier cosa de todo el form
-        echo  CHtml::submitButton('guardas password', ['class' => 'btn btn-primary']);
+        echo CHtml::submitButton('guardas password', ['class' => 'btn btn-primary']);
         ?>
     </div>
 

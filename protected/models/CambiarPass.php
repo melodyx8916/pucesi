@@ -1,7 +1,5 @@
 <?php
-
-class CambiarPassword extends CFormModel {
-
+class CambiarPass extends CFormModel {
 //mis variables de mi modelo de registro usuarios
     public $password;
     public $nuevo_password;
@@ -9,7 +7,6 @@ class CambiarPassword extends CFormModel {
 
 //mis reglas de validacion para el modelo en la cual se asignan propiedades alos campos
     public function rules() {
-
         //nomenclatura
         return [
             //todos los atributos son requeridos
@@ -29,14 +26,5 @@ class CambiarPassword extends CFormModel {
                 'message' => 'El password no coincide',
             ),
         ];
-
-//        //con array
-//        return array(
-//            //todos los atributos son requeridos
-//            array('password,repetir_password,repetir_nuevo_password',
-//                'required',
-//                'message' => 'son requeridos'),
-//        );
     }
-
 }

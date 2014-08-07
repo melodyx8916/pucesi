@@ -43,8 +43,8 @@
                                 array('label' => 'Iniciar Sesion', 'url' => array('/site/login'), 'visible' => Yii::app()->user->isGuest),
                                 array('label' => 'Panel de Control', 'visible' => !Yii::app()->user->isGuest,
                                     'items' => array(
-                                        array('label' => 'Configuracion', 'url' => array('/usuario/configuracion')),
-                                        array('label'=>'Subir Imagenes', 'url'=>array('/usuario/upload'))
+                                        array('label' => 'Cambiar Password', 'url' => array('/usuario/cambiarPass')),
+                                        array('label' => 'Subir Imagenes', 'url' => array('/usuario/subirImagen'))
                                     ),
                                 ),
                                 array('label' => 'Cerrar Sesion (' . Yii::app()->user->name . ')', 'url' => array('/site/logout'), 'visible' => !Yii::app()->user->isGuest)

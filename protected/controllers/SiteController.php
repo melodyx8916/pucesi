@@ -96,17 +96,6 @@ class SiteController extends Controller {
         $this->redirect(Yii::app()->homeUrl);
     }
 
-//    //MI ACCION DE MI PANEL
-//    public function actionPanel() {
-//        //si el usuario ha sido logueado lo llevara a mi panel de caso contrario se redirecciona a la vista home
-//        if (Yii::app()->user->isGuest) {  //  si el usuario es invitado
-//            $this->redirect(Yii::app()->homeUrl);
-//        } else {
-//            //permanece en el panel si esta logueado
-//            $this->render('panel');
-//        }
-//    }
-
     public function actionRegistro() {
 
         //instanciar mi modelo
@@ -131,7 +120,7 @@ class SiteController extends Controller {
 
                 $guardar = new ConsultasDB;
                 $guardar->guardar_usuario(
-                        $model->nombre, $model->email, $model->password);
+                $model->nombre, $model->email, $model->password);
 
                 // y envia un correo de conformacion 
                 $subject = "Confirmar registro en " . Yii::app()->name . "";
