@@ -4,14 +4,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 //para registrar mis propios datos en la base de datos
-
 $this->pageTitle = 'Formulario de Registro de Usuarios';
 //MI MENU seguimiento
 $this->breadcrumbs = array('registro');
 ?>
-
 <h3>FORMULARIO DE REGISTRO</h3>
 
 <strong class="text-info"><?php echo $mensaje_envio;?></strong>

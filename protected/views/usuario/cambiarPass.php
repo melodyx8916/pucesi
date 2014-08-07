@@ -14,7 +14,7 @@ $this->breadcrumbs = array(
 //[]   ESTO TAMBIEN REPRESENTA LOS QUE ES UN ARRAY()  /  []
     $form = $this->beginWidget('CActiveForm', [
         'method' => 'POST',
-        'action' => Yii::app()->createUrl('usuario/configuracion'),
+        'action' => Yii::app()->createUrl('usuario/cambiarPass'),
         'enableClientValidation' => true,
         'clientOptions' => [
             'validateOnSubmit' => true
