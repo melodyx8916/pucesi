@@ -23,12 +23,12 @@ class ValidarRegistro extends CFormModel {
                 'email',
                 'message' => 'El formato de Email es Incorrecto',
             ),
-//            array(
-//                'password',
-//               // 'match',
-//             //   'pattern' => '/^[a-z0-9]+$/i',
-//                'message' => 'Solo letras y numeros',
-//            ),
+            array(
+                'password',
+                'match',
+                'pattern' => '/^[a-z0-9]+$/i',
+                'message' => 'Solo letras y numeros',
+            ),
             array(
                 'repetir_password',
                 'compare',
@@ -62,7 +62,6 @@ class ValidarRegistro extends CFormModel {
         $conexion = Yii::app()->db;
         //SELECT username FROM tbl_user WHERE username = 'test1'
         $consulta = "SELECT username FROM tbl_user WHERE username = '" . $this->nombre . "'";
-
         $resultado = $conexion->createCommand($consulta);  //creo el command para la consulta
         $registros = $resultado->query(); //ejecuto la consulta
         //recoger los datos en un foreach de mi registros a registro

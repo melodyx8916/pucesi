@@ -4,6 +4,6 @@ CREATE TABLE tbl_user (
   `password` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
   `codigo_verificacion` varchar(128) NOT NULL,
-  `activo` tinyint(1) NOT NULL DEFAULT '1',
+  `activo` tinyint(0) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_user`)
 )

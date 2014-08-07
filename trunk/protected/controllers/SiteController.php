@@ -52,17 +52,17 @@ class SiteController extends Controller {
             if ($model->validate()) {
 
                 $mail = Yii::app()->Smtpmail;
-               // $mail->SetFrom('cristtian8916@mail.com', $model->name);
+                // $mail->SetFrom('cristtian8916@mail.com', $model->name);
                 //$recipient = yii::app()->Smtpmail->mail_recipient;
                 $mail->Subject = $model->subject;
-                $message=$model->body.'<br />'.$model->email.'<br />'.$model->name;
+                $message = $model->body . '<br />' . $model->email . '<br />' . $model->name;
                 $mail->MsgHTML($message);
-                $mail->CharSet="UTF-8";
-                
+                $mail->CharSet = "UTF-8";
+
                 //$mail->AddAddress('cristtian8916@mail.com', 'mi correo');
                 $mail->AddAddress($model->email, 'este correo se registro');
                 if (!$mail->Send()) {
-                    Yii::app()->user->setFlash('error', 'email no valido'.$mail->ErrorInfo);
+                    Yii::app()->user->setFlash('error', 'email no valido' . $mail->ErrorInfo);
                 } else {
                     Yii::app()->user->setFlash('success', 'correo enviado');
                 }
@@ -124,34 +124,79 @@ class SiteController extends Controller {
                 $model->addError('repetir_password', 'Error al enviar el formulario');
             } else {
                 //guarda informacion y envia un correo de conformacion 
-
                 $guardar = new ConsultasDB;
                 $guardar->guardar_usuario(
                         $model->nombre, $model->email, $model->password);
-
                 // y envia un correo de conformacion 
                 $subject = "Confirmar registro en " . Yii::app()->name . "";
                 $message = "Para confirmar su cuenta, haga click en el";
                 $message.= "Siguiente enlace...";
-                $message.= "<a href='http://localhost/proyecto_boot/site/registro&username=" . $model->nombre . "&codigo_verificacion=" . $guardar->codigo_verificacion . "'>Confirmar Registro</a>";
+                $message.= "<a href='http://localhost/proyecto_boot/index.php?r=site/registro&username=" . $model->nombre . "&codigo_verificacion=" . $guardar->codigo_verificacion . "'>Confirmar Registro</a>";
 
-                
-                
                 $email = new EnviarEmail;
-                $msm=$email->Enviar_Email(
-                        array(Yii::app()->params['adminEmail'], Yii::app()->name), 
-                        array($model->email, $model->nombre), 
-                        $subject, 
-                        $message
-                        );
+                $msm = $email->Enviar_Email(
+                        array(Yii::app()->params['adminEmail'], Yii::app()->name), array($model->email, $model->nombre), $subject, $message
+                );
                 $model->nombre = '';
                 $model->email = '';
                 $model->password = '';
                 $model->repetir_password = '';
-               // $msm = 'Hemos Enviado un Email a su correo para confirmacion';
+                $msm = 'Hemos Enviado un Email a su correo para confirmacion';
+            }
+        }
+        if (isset($_GET["username"]) && isset($_GET["codigo_verificacion"])) {
+            $username = $_GET['username'];
+            $codigo_verificacion = $_GET['codigo_verificacion'];
+
+            if (!preg_match('/^[a-z0-9áeíóúàèìòùñ\s]+$/i', $username)) {
+                $msm = 'Error al confirmar cuenta';
+            } else if (!preg_match('/^[a-z0-9]+$/i', $codigo_verificacion)) {
+                $msm = 'Error al confirmar cuenta';
+            } else {
+                //      $msm = $this->consultaUserCodigo($username, $codigo_verificacion); //hacer consulta
+                $conexion = Yii::app()->db;
+                $consulta = "SELECT username, codigo_verificacion FROM tbl_user ";
+                $consulta.="WHERE username='" . $username . "' AND codigo_verificacion='" . $codigo_verificacion . "'";
+                      
+                $resultado = $conexion->createCommand($consulta);
+                $registros = $resultado->query();
+                $existe = false;
+                
+
+                foreach ($registros as $registro) {
+                    $existe = true;
+                }
+                if ($existe === true) {
+                    $consulta = "UPDATE tbl_user SET activo=1 WHERE ";
+                    $consulta.="username='" . $username . "' AND codigo_verificacion='" . $codigo_verificacion . "'";
+                    $resultado = $conexion->createCommand($consulta)->execute();
+                    $msm = 'Se ha registrado con existo, Ya puede Iniciar Sesion';
+                }
             }
         }
         $this->render('registro', array('model' => $model, 'mensaje_envio' => $msm)); //enviar los datos a la vista con el $model
+    }
+
+    public function consultaUserCodigo($username, $codigo_verificacion) {
+//        $conexion = Yii::app()->db;
+//        $consulta = "SELECT user_name, codigo_verificacion FROM tbl_user";
+//        $consulta.="WHERE user_name='" . $username . "' AND codigo_verificacion='" . $codigo_verificacion . "'";
+//        $resultado = $conexion->createCommand($consulta);
+//        $registros = $resultado->query();
+//        $existe = false;
+//
+//        
+//        foreach ($registro as $registro) {
+//            $existe = true;
+//        }
+//        if ($existe === true) {
+//            $consulta = "UPDATE tbl_user SET activo WHERE ";
+//            $consulta.="user_name='" . $username . "' AND codigo_verificacion='" . $codigo_verificacion . "'";
+//            $resultado = $conexion->createCommand($consulta)->execute();
+//            $msm = 'Se ha registrado con existo, Ya puede Iniciar Sesion';
+//        }
+
+        return $msm;
     }
 
     public function actionRecuperar_pass() {

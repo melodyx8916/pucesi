@@ -5868,3 +5868,197 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/proyecto_boot/site/registro&username=criss&codigo_verificacion=77e9e5e4be5ebdc8fcf29a2872415d542412d787
 ---
+2014/08/07 14:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "upload".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('upload')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('upload')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/upload')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/usuario/upload
+---
+2014/08/07 20:02:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian araque&codigo_verificacion=bb98d7281866006b6b50bda40e045c7e5b010782".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian%20araque&codigo_verificacion=bb98d7281866006b6b50bda40e045c7e5b010782
+---
+2014/08/07 20:09:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristtian&codigo_verificacion=32cbfc5c5ed3c08f39b3a454a10c44d3d4ab2c73".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristtian&codigo_verificacion=32cbfc5c5ed3c08f39b3a454a10c44d3d4ab2c73
+---
+2014/08/07 20:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristian araque&codigo_verificacion=bb98d7281866006b6b50bda40e045c7e5b010782".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristian%20araque&codigo_verificacion=bb98d7281866006b6b50bda40e045c7e5b010782
+---
+2014/08/07 20:15:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cristtian&codigo_verificacion=32cbfc5c5ed3c08f39b3a454a10c44d3d4ab2c73".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cristtian&codigo_verificacion=32cbfc5c5ed3c08f39b3a454a10c44d3d4ab2c73
+---
+2014/08/07 20:30:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1
+---
+2014/08/07 20:32:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1
+---
+2014/08/07 20:32:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1
+---
+2014/08/07 20:33:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1
+---
+2014/08/07 20:33:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1
+---
+2014/08/07 20:33:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1
+---
+2014/08/07 20:33:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=cris&codigo_verificacion=9c25bbb78c436dc15bbe098a6fcbae5563f916e1
+---
+2014/08/07 20:49:41 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_name' in 'field list'. The SQL statement executed was: SELECT user_name, codigo_verificacion FROM tbl_user WHERE user_name='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9397e747b'.
+in C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php (162)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 20:49:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_name' in 'field list'. The SQL statement executed was: SELECT user_name, codigo_verificacion FROM tbl_user WHERE user_name='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9397e747b'' in C:\yii\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\yii\framework\db\CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php(162): CDbCommand->query()
+#2 C:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistro()
+#3 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro')
+#7 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro')
+#8 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=site/registro&username=cris&codigo_verificacion=2b306bf3ddbedd3da19d7bda26c175a9397e747b
+---
+2014/08/07 20:50:36 [error] [php] Undefined variable: registro (C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php:166)
+Stack trace:
+#0 C:\yii\framework\web\CController.php(286): SiteController->runAction()
+#1 C:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 C:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#3 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\proyecto_boot\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyecto_boot/index.php?r=site/registro&username=cris&codigo_verificacion=2b306bf3ddbedd3da19d7bda26c175a9397e747b
+in C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php (166)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 20:51:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_name='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9' at line 1. The SQL statement executed was: UPDATE tbl_user SET activo WHERE user_name='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9397e747b'.
+in C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php (172)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 20:51:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE user_name='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9' at line 1. The SQL statement executed was: UPDATE tbl_user SET activo WHERE user_name='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9397e747b'' in C:\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php(172): CDbCommand->execute()
+#1 C:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistro()
+#2 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro')
+#6 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro')
+#7 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=site/registro&username=cris&codigo_verificacion=2b306bf3ddbedd3da19d7bda26c175a9397e747b
+---
+2014/08/07 20:51:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE username='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a93' at line 1. The SQL statement executed was: UPDATE tbl_user SET activo WHERE username='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9397e747b'.
+in C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php (172)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 20:51:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE username='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a93' at line 1. The SQL statement executed was: UPDATE tbl_user SET activo WHERE username='cris' AND codigo_verificacion='2b306bf3ddbedd3da19d7bda26c175a9397e747b'' in C:\yii\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php(172): CDbCommand->execute()
+#1 C:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistro()
+#2 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro')
+#6 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro')
+#7 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=site/registro&username=cris&codigo_verificacion=2b306bf3ddbedd3da19d7bda26c175a9397e747b
+---
+2014/08/07 20:59:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "configuracion".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('configuracion')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('configuracion')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('usuario/configu...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/index.php?r=usuario/configuracion
+HTTP_REFERER=http://localhost/proyecto_boot/index.php?r=usuario/cambiarPass
+---
