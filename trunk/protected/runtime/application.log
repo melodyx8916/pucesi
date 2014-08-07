@@ -5841,3 +5841,30 @@ REQUEST_URI=/proyecto_boot/usuario
 in C:\wamp\www\proyecto_boot\protected\views\layouts\main.php (69)
 in C:\wamp\www\proyecto_boot\protected\views\layouts\column1.php (6)
 in C:\wamp\www\proyecto_boot\protected\controllers\UsuarioController.php (26)
+2014/08/07 06:36:45 [error] [php] Object of class EnviarEmail could not be converted to string (C:\wamp\www\proyecto_boot\protected\views\site\registro.php:17)
+Stack trace:
+#0 C:\yii\framework\web\CController.php(869): SiteController->renderFile()
+#1 C:\yii\framework\web\CController.php(782): SiteController->renderPartial()
+#2 C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php(153): SiteController->render()
+#3 C:\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistro()
+#4 C:\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\yii\framework\web\CController.php(286): SiteController->runAction()
+#6 C:\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 C:\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#8 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\proyecto_boot\index.php(13): CWebApplication->run()
+REQUEST_URI=/proyecto_boot/site/registro
+in C:\wamp\www\proyecto_boot\protected\views\site\registro.php (17)
+in C:\wamp\www\proyecto_boot\protected\controllers\SiteController.php (153)
+in C:\wamp\www\proyecto_boot\index.php (13)
+2014/08/07 06:40:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registro&username=criss&codigo_verificacion=77e9e5e4be5ebdc8fcf29a2872415d542412d787".' in C:\yii\framework\web\CController.php:483
+Stack trace:
+#0 C:\yii\framework\web\CController.php(270): CController->missingAction('registro&userna...')
+#1 C:\yii\framework\web\CWebApplication.php(282): CController->run('registro&userna...')
+#2 C:\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registro&u...')
+#3 C:\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\proyecto_boot\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/proyecto_boot/site/registro&username=criss&codigo_verificacion=77e9e5e4be5ebdc8fcf29a2872415d542412d787
+---

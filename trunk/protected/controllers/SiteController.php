@@ -50,15 +50,22 @@ class SiteController extends Controller {
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
             if ($model->validate()) {
-                $name = '=?UTF-8?B?' . base64_encode($model->name) . '?=';
-                $subject = '=?UTF-8?B?' . base64_encode($model->subject) . '?=';
-                $headers = "From: $name <{$model->email}>\r\n" .
-                        "Reply-To: {$model->email}\r\n" .
-                        "MIME-Version: 1.0\r\n" .
-                        "Content-Type: text/plain; charset=UTF-8";
 
-                mail(Yii::app()->params['adminEmail'], $subject, $model->body, $headers);
-                Yii::app()->user->setFlash('contact', 'Thank you for contacting us. We will respond to you as soon as possible.');
+                $mail = Yii::app()->Smtpmail;
+               // $mail->SetFrom('cristtian8916@mail.com', $model->name);
+                //$recipient = yii::app()->Smtpmail->mail_recipient;
+                $mail->Subject = $model->subject;
+                $message=$model->body.'<br />'.$model->email.'<br />'.$model->name;
+                $mail->MsgHTML($message);
+                $mail->CharSet="UTF-8";
+                
+                //$mail->AddAddress('cristtian8916@mail.com', 'mi correo');
+                $mail->AddAddress($model->email, 'este correo se registro');
+                if (!$mail->Send()) {
+                    Yii::app()->user->setFlash('error', 'email no valido'.$mail->ErrorInfo);
+                } else {
+                    Yii::app()->user->setFlash('success', 'correo enviado');
+                }
                 $this->refresh();
             }
         }
@@ -120,7 +127,7 @@ class SiteController extends Controller {
 
                 $guardar = new ConsultasDB;
                 $guardar->guardar_usuario(
-                $model->nombre, $model->email, $model->password);
+                        $model->nombre, $model->email, $model->password);
 
                 // y envia un correo de conformacion 
                 $subject = "Confirmar registro en " . Yii::app()->name . "";
@@ -128,24 +135,26 @@ class SiteController extends Controller {
                 $message.= "Siguiente enlace...";
                 $message.= "<a href='http://localhost/proyecto_boot/site/registro&username=" . $model->nombre . "&codigo_verificacion=" . $guardar->codigo_verificacion . "'>Confirmar Registro</a>";
 
-                $email= new EnviarEmail;
-                $email->Enviar_Email(
-                        array(Yii::app()->params['adminEmail'],
-                            Yii::app()->name), 
+                
+                
+                $email = new EnviarEmail;
+                $msm=$email->Enviar_Email(
+                        array(Yii::app()->params['adminEmail'], Yii::app()->name), 
                         array($model->email, $model->nombre), 
                         $subject, 
-                        $message);
+                        $message
+                        );
                 $model->nombre = '';
                 $model->email = '';
                 $model->password = '';
                 $model->repetir_password = '';
-                $msm = 'Hemos Enviado un Email a su correo para confirmacion';
+               // $msm = 'Hemos Enviado un Email a su correo para confirmacion';
             }
         }
         $this->render('registro', array('model' => $model, 'mensaje_envio' => $msm)); //enviar los datos a la vista con el $model
     }
-    
-    public function actionRecuperar_pass(){
+
+    public function actionRecuperar_pass() {
         $this->render('recuperar_pass');
     }
 
